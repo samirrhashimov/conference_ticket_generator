@@ -1,0 +1,141 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url('/assets/images/background-mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1440px) {
+    body {
+        background-image: url('/assets/images/background-tablet.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-image: url('/assets/images/background-desktop.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Header */
+#navbar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0px 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header_text {
+    font-family: Inconsolata;
+    font-size: 36px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.subtitle_text {
+    font-family: Inconsolata;
+    font-size: 16px;
+    text-align: center;
+    color: hsl(252, 6%, 83%);
+}
+
+/* Form */
+#ticket_form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#upload_file > label {
+    color: #ffffff;
+    font-family: Inconsolata;
+}
+
+/* Upload */
+#upload_area {
+    margin: 8px 0;
+    width: 100%;
+    height: 80px;
+    border: 1px dashed hsl(245, 15%, 58%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    flex-direction: column;
+    background-color: hsla(245, 19%, 35%, 0.356);
+}
+
+#upload_area > img {
+    width: 30px;
+}
+
+.alt_text {
+    font-family: Inconsolata;
+    color: hsl(252, 6%, 83%);
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.help_text {
+    color: hsl(245, 15%, 58%);
+    display: inline;
+}
+
+/* Other Info */
+#other_info {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#other_info > label {
+    color: #ffffff;
+    font-family: Inconsolata;
+}
+
+.input_main {
+    margin: 8px 0 20px 0;
+    padding: 3px 10px;
+    height: 30px;
+    color: #ffffff;
+    border: 1px solid hsl(245, 15%, 58%);
+    border-radius: 5px;
+    background-color: hsla(245, 19%, 35%, 0.356);
+    font-family: Inconsolata;
+}
+
+.submit {
+    padding: 9px 0;
+    border-radius: 5px;
+    border: none;
+    font-family: Inconsolata;
+    font-weight: bold;
+    background-color: hsl(7, 88%, 67%);
+}
