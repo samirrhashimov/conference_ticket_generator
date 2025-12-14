@@ -24,16 +24,16 @@
       <h1 class="header_text">Your Journey to Coding Conf<br> 2025 Starts Here!</h1>
       <p class="subtitle_text">Secure your spot at next year's biggest coding conference.</p>
 
-      <form id="ticket_form">
+      <form id="ticket_form" novalidate>
         <div id="upload_file">
-          <label>Upload Avatar</label>
-          <input type="file" id="upload" accept="image/*">
+          <label for="upload">Upload Avatar</label>
+          <input type="file" id="upload" accept=".jpg,.jpeg,.png" aria-describedby="upload-hint image_error">
           <div id="upload_area">
             <img src="/assets/images/icon-upload.svg">
             <p class="alt_text">Drag and drop or click to upload</p>
           </div>
 
-          <div class="help_text">
+          <div class="help_text" id="upload-hint">
             <img src="/assets/images/icon-info.svg">
             <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
           </div>
@@ -41,16 +41,21 @@
         </div>
 
         <div id="other_info">
-          <label>Full Name</label>
-          <input type="text" id="fullname" class="input_main" required>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" class="input_main" required aria-describedby="name_error">
+          <div class="error" id="name_error"></div>
 
-          <label>Email Address</label>
-          <input type="email" id="email" class="input_main" placeholder="example@email.com" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="input_main" placeholder="example@email.com" required
+            aria-describedby="email_error">
+          <div class="error" id="email_error"></div>
 
-          <label>GitHub Username</label>
-          <input type="text" id="githubusername" class="input_main" placeholder="@yourusername" required>
+          <label for="githubusername">GitHub Username</label>
+          <input type="text" id="githubusername" class="input_main" placeholder="@yourusername" required
+            aria-describedby="github_error">
+          <div class="error" id="github_error"></div>
         </div>
-        <button class="submit" type="submit" onclick="saveData()">Generate My Ticket</button>
+        <button class="submit" type="submit">Generate My Ticket</button>
       </form>
     </section>
 

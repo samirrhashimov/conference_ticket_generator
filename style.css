@@ -92,6 +92,10 @@ body {
     background-color: hsla(245, 19%, 35%, 0.356);
 }
 
+#upload_area:hover {
+    background-color: hsla(245, 19%, 35%, 0.658);
+}
+
 #upload_area>img {
     width: 30px;
 }
@@ -105,7 +109,10 @@ body {
 
 .help_text {
     color: hsl(245, 15%, 58%);
-    display: inline;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
 }
 
 /* Other Info */
@@ -122,7 +129,7 @@ body {
 }
 
 .input_main {
-    margin: 8px 0 20px 0;
+    margin: 8px 0 5px 0;
     padding: 3px 10px;
     height: 30px;
     color: #ffffff;
@@ -130,6 +137,10 @@ body {
     border-radius: 5px;
     background-color: hsla(245, 19%, 35%, 0.356);
     font-family: Inconsolata;
+}
+
+.input_main:hover {
+    background-color: hsla(245, 19%, 35%, 0.658);
 }
 
 .submit {
@@ -144,7 +155,7 @@ body {
 .error {
     color: red;
     font-size: 13px;
-    margin-top: 4px;
+    margin: 4px 0 15px 0;
 }
 
 /* Ticket */
@@ -184,6 +195,7 @@ body {
     top: 15px;
     left: 13px;
     width: 25px;
+    height: 25px;
 }
 
 #org_name {
@@ -239,7 +251,7 @@ body {
     align-items: center;
 }
 
-.attribution{
+.attribution {
     margin: 50px 0 20px;
     display: flex;
     justify-content: center;
@@ -247,11 +259,10 @@ body {
 }
 
 
-.attribution a{
+.attribution a {
     margin: 0 5px;
     display: flex;
     justify-content: center;
     color: #00acb8;
     text-decoration: none;
 }
-
