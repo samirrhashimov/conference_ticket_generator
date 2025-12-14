@@ -43,6 +43,7 @@ body {
 
 #container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-self: center;
     max-width: 700px;
@@ -65,13 +66,13 @@ body {
 
 /* Form */
 #ticket_form {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-#upload_file > label {
+#upload_file>label {
     color: #ffffff;
     font-family: Inconsolata;
 }
@@ -91,7 +92,7 @@ body {
     background-color: hsla(245, 19%, 35%, 0.356);
 }
 
-#upload_area > img {
+#upload_area>img {
     width: 30px;
 }
 
@@ -115,7 +116,7 @@ body {
     flex-direction: column;
 }
 
-#other_info > label {
+#other_info>label {
     color: #ffffff;
     font-family: Inconsolata;
 }
@@ -139,3 +140,118 @@ body {
     font-weight: bold;
     background-color: hsl(7, 88%, 67%);
 }
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* Ticket */
+#gen_ticket {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gen_name {
+    background: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#gen_email {
+    color: hsl(7, 71%, 60%);
+}
+
+#ticket {
+    position: relative;
+    margin: 80px 0 0 0;
+    background-image: url(/assets/images/pattern-ticket.svg);
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 196px;
+}
+
+#org {
+    position: relative;
+}
+
+#org_img {
+    position: relative;
+    top: 15px;
+    left: 13px;
+    width: 25px;
+}
+
+#org_name {
+    position: relative;
+    display: inline;
+    left: 18px;
+    font-size: 24px;
+    font-family: Inconsolata;
+    color: #ffffff;
+    top: 8px;
+}
+
+#org_date {
+    position: relative;
+    left: 47px;
+    font-size: 12px;
+    font-family: Inconsolata;
+    color: hsl(245, 15%, 58%);
+    top: 8px;
+}
+
+#cust {
+    position: relative;
+    margin-top: 90px;
+}
+
+#cust_img {
+    width: 50px;
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 10px;
+}
+
+#cust_name {
+    color: #ffffff;
+    font-family: Inconsolata;
+    margin: 0;
+    display: inline;
+    position: relative;
+    bottom: 45px;
+    left: 20px;
+}
+
+#cust_github {
+    color: hsl(245, 15%, 58%);
+    font-family: Inconsolata;
+    margin: 0;
+    display: flex;
+    position: relative;
+    top: -40px;
+    left: 70px;
+    align-items: center;
+}
+
+.attribution{
+    margin: 50px 0 20px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+
+.attribution a{
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    color: #00acb8;
+    text-decoration: none;
+}
+
