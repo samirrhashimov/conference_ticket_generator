@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/samirrhashimov/conference_ticket_generator](https://github.com/samirrhashimov/conference_ticket_generator)
-- Live Site URL: [https://samirrhashimov.github.io/conference_ticket_generator/](https://samirrhashimov.github.io/conference_ticket_generator/)
+- Live Site URL: [https://conference-ticket-generator-three-blond.vercel.app/](https://conference-ticket-generator-three-blond.vercel.app/)
 
 ## My process
 
